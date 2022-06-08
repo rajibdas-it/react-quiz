@@ -1,5 +1,13 @@
+import "../component/Styles/style.css";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+
 function App() {
-  return <h1>Hello React</h1>;
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
 }
 
 export default App;
