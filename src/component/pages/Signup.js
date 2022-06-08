@@ -11,15 +11,24 @@ const Signup = () => {
     <>
       <h1> Create an account</h1>
       <form action="">
-        <input type="text" placeholder="Enter Name" /><br /><br />
-        <input type="email" placeholder="Enter Email" /><br /><br />
-        <input type="password" placeholder="Enter Password" /><br /><br />
-        <input type="password" placeholder="Confirm Password" /><br /><br />
+        <input type="text" placeholder="Enter Name" />
+        <br />
+        <br />
+        <input type="email" placeholder="Enter Email" />
+        <br />
+        <br />
+        <input type="password" placeholder="Enter Password" />
+        <br />
+        <br />
+        <input type="password" placeholder="Confirm Password" />
+        <br />
+        <br />
         <label>
           <input type="checkbox" />
           <span>I agree to the Terms & Conditions</span>
         </label>
-        <br /><br />
+        <br />
+        <br />
         <button type="submit"> Submit Now</button>
       </form>
       {/* <div className="column">
@@ -38,7 +47,7 @@ const Signup = () => {
             icon="lock_clock"
           />
           <Checkbox text="I agree to the Terms &amp; Conditions" />
-          <Button>Submit Now</Button>
+          <Button><span>Submit Now</span></Button>
           <div className="info">
             Already have an account? <a href="login.html">Login</a> instead.
           </div>
