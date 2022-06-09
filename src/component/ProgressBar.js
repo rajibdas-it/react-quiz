@@ -11,7 +11,7 @@ const ProgressBar = () => {
       <div className={classes.rangeArea}>
         <div className={classes.tooltip}>24% Cimplete!</div>
         <div className={classes.rangeBody}>
-          <div className={classes.progress} style="width: 20%"></div>
+          <div className={classes.progress} style={{ width: "20%" }}></div>
         </div>
       </div>
       <a href="result.html">

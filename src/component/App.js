@@ -1,21 +1,26 @@
 import "../component/Styles/style.css";
 import Layout from "./Layout";
-// import Login from "./pages/Login";
+import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
-// import Home from "./pages/Home";
-// import Signup from "./pages/Signup";
+import Home from "./pages/Home";
+import Signup from "./pages/Signup";
+import Result from "./pages/Result";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Layout>
-      {/* <Home /> */}
-      {/* <Login /> */}
-      {/* <Signup /> */}
-      <Quiz />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/signup" element={Signup} />
+          <Route exact path="/login" element={Login} />
+          <Route exact path="/quiz" element={Quiz} />
+          <Route exact path="/result" element={Result} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-// npm audit or npm audit fix for rebuild project
