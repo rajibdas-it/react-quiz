@@ -5,21 +5,21 @@ import Quiz from "./pages/Quiz";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Result from "./pages/Result";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Layout>
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/signup" element={Signup} />
-          <Route exact path="/login" element={Login} />
-          <Route exact path="/quiz" element={Quiz} />
-          <Route exact path="/result" element={Result} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="signup" element={<Signup />} />
+          <Route exact path="login" element={<Login />} />
+          <Route exact path="quiz" element={<Quiz />} />
+          <Route exact path="result" element={<Result />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </Router>
   );
 }
 
