@@ -1,30 +1,12 @@
 import React from "react";
+import SignupForm from "../SignupForm";
 
 const Signup = () => {
   return (
     <>
-      <h1> Create an account</h1>
-      <form action="">
-        <input type="text" placeholder="Enter Name" />
-        <br />
-        <br />
-        <input type="email" placeholder="Enter Email" />
-        <br />
-        <br />
-        <input type="password" placeholder="Enter Password" />
-        <br />
-        <br />
-        <input type="password" placeholder="Confirm Password" />
-        <br />
-        <br />
-        <label>
-          <input type="checkbox" />
-          <span>I agree to the Terms & Conditions</span>
-        </label>
-        <br />
-        <br />
-        <button type="submit"> Submit Now</button>
-      </form>
+      <h1> Create Your account</h1>
+      <SignupForm />
+
       {/* <div className="column">
         <Illustration />
         <Form className={classes.signup}>
